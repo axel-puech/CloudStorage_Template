@@ -98,7 +98,7 @@
       parent: !<reference.SceneObject> 9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3
       referenceAsset: !<reference.RemoteReferenceAsset> 345ed93c-5efe-4c81-935d-503faec390fa
       fallbackAsset: !<reference.Asset> 00000000-0000-0000-0000-000000000000
-      action: 0
+      action: 2
       prefabParent: !<reference.SceneObject> 44f6d660-329a-4535-a647-3f2f6e1efd5f
       myAudioComponent: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
       myMaterialMeshVisual: !<reference.Image> 72a81448-bcb5-4577-b57f-075cd7c45fc6
