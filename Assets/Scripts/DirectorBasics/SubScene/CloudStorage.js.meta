@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/1aa1be0d-40cd-4811-821a-8149b1d38a1e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 0c0055a6-fbfd-4cc8-9fa6-fec323cf3461
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 0c0055a6-fbfd-4cc8-9fa6-fec323cf3461
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 839bd5ba-0ede-4188-8018-dbee341fe50d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/839bd5ba-0ede-4188-8018-dbee341fe50d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  ComponentUid: 4ea33ddc-bf92-4a77-8c35-96fd3924eb03
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    action: false
+    fallbackAsset: false
+    idAsset: false
+    myAudioComponent: false
+    myMLComponent: false
+    myMaterial: false
+    myMaterialMeshVisual: false
+    myRenderMeshVisual: false
+    parent: false
+    prefabParent: false
+    referenceAsset: false
+    texturePropertyName: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      referenceAsset: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      fallbackAsset: !<reference.Asset> 00000000-0000-0000-0000-000000000000
+      action: -1
+      prefabParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      myAudioComponent: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      myMaterialMeshVisual: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      myMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      texturePropertyName: ""
+      myRenderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      myMLComponent: !<reference.MLComponent> 00000000-0000-0000-0000-000000000000
+      idAsset: 0
+  ScriptTypes:
+    -
+      {}

@@ -1,0 +1,5734 @@
+{
+  "version": 2,
+  "scene": {
+    "id": "0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99",
+    "name": "Scene"
+  },
+  "sceneObjects": [
+    {
+      "id": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "name": "Scripts",
+      "enabled": true,
+      "parentId": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "name": "LIB",
+      "enabled": true,
+      "parentId": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "73b4b8c2-13f1-403b-9aa7-77fdd22749ba",
+      "name": "UpdateManager",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "e4dce161-cec5-4f9a-86dd-cee8a743e8ff",
+          "type": "ScriptComponent",
+          "name": "UpdateManager",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/UpdateManager.js",
+            "name": "UpdateManager",
+            "enabled": true,
+            "sceneObject": "@sceneObject:UpdateManager",
+            "id": "e4dce161-cec5-4f9a-86dd-cee8a743e8ff",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e57c442-57dc-4138-afe0-f8ce974480a7",
+      "name": "WidgetUIReferences",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "bc2cc4af-e211-4932-864d-403349161fc7",
+          "type": "ScriptComponent",
+          "name": "Widget_UI_References",
+          "enabled": true,
+          "properties": {
+            "text": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string",
+              "uiInfo": "{\"widget\" : \"text_area\"}"
+            },
+            "string1": {
+              "isScriptInput": true,
+              "value": "hello",
+              "type": "string",
+              "uiInfo": "{\"label\":\"String #1\"}",
+              "defaultValue": "hello"
+            },
+            "str0": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string"
+            },
+            "number1": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "int",
+              "uiInfo": "{\"label\":\"Number (1.0)\", \"hint\":\"This is a number variable\"}"
+            },
+            "myVec4": {
+              "isScriptInput": true,
+              "value": "{x: 0, y: 0, z: 0, w: 0}",
+              "type": "vec4"
+            },
+            "myVec3": {
+              "isScriptInput": true,
+              "value": "{x: 0, y: 0, z: 0}",
+              "type": "vec3"
+            },
+            "myStruct": {
+              "isScriptInput": true,
+              "value": {
+                "h": {
+                  "isScriptInput": true,
+                  "value": "",
+                  "type": "string",
+                  "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"cat\", \"value\":\"cat\"}, {\"label\":\"dog\", \"value\":\"dog\"}, {\"label\":\"bird\", \"value\":\"bird\"}]}"
+                },
+                "c": {
+                  "isScriptInput": true,
+                  "value": 0,
+                  "type": "int",
+                  "uiInfo": "{\"label\":\"My Int\", \"min\":0, \"max\":25, \"step\":5}"
+                },
+                "a": {
+                  "isScriptInput": true,
+                  "value": "{x: 0, y: 0, z: 0}",
+                  "type": "vec3",
+                  "uiInfo": "{\"widget\": \"color\"}"
+                }
+              },
+              "type": "struct"
+            },
+            "myFloatClamp": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "float",
+              "uiInfo": "{\"widget\":\"spinbox\", \"label\":\"My Clamp Float\", \"min\":0.0, \"max\":1.0, \"step\":0.001}"
+            },
+            "myString": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string"
+            },
+            "myIntClamp": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "int",
+              "uiInfo": "{\"widget\":\"spinbox\", \"label\":\"My Clamp Int\", \"min\":0, \"max\":25, \"step\":5}"
+            },
+            "showIfBool": {
+              "isScriptInput": true,
+              "value": false,
+              "type": "bool"
+            },
+            "myVec2": {
+              "isScriptInput": true,
+              "value": "{x: 0, y: 0}",
+              "type": "vec2"
+            },
+            "strUser0": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string"
+            },
+            "myStructArray": {
+              "isScriptInput": true,
+              "value": {
+                "h": {
+                  "isScriptInput": true,
+                  "type": "string",
+                  "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"cat\", \"value\":\"cat\"}, {\"label\":\"dog\", \"value\":\"dog\"}, {\"label\":\"bird\", \"value\":\"bird\"}]}"
+                },
+                "c": {
+                  "isScriptInput": true,
+                  "type": "int",
+                  "uiInfo": "{\"label\":\"My Int\", \"min\":0, \"max\":25, \"step\":5}"
+                },
+                "a": {
+                  "isScriptInput": true,
+                  "type": "vec3",
+                  "uiInfo": "{\"widget\": \"color\"}"
+                }
+              },
+              "type": "struct[]"
+            },
+            "myInt": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "int"
+            },
+            "myIntSlider": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "int",
+              "uiInfo": "{\"widget\":\"slider\", \"min\":0, \"max\":10, \"step\":1}"
+            },
+            "myObjArray": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "SceneObject[]"
+            },
+            "myStructInStruct": {
+              "isScriptInput": true,
+              "value": {
+                "v": {
+                  "isScriptInput": true,
+                  "value": 0,
+                  "type": "int",
+                  "uiInfo": "{\"label\":\"My Int\", \"min\":0, \"max\":25, \"step\":5}"
+                },
+                "properties": {
+                  "isScriptInput": true,
+                  "value": {
+                    "h": {
+                      "isScriptInput": true,
+                      "value": "",
+                      "type": "string",
+                      "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"cat\", \"value\":\"cat\"}, {\"label\":\"dog\", \"value\":\"dog\"}, {\"label\":\"bird\", \"value\":\"bird\"}]}"
+                    },
+                    "c": {
+                      "isScriptInput": true,
+                      "value": 0,
+                      "type": "int",
+                      "uiInfo": "{\"label\":\"My Int\", \"min\":0, \"max\":25, \"step\":5}"
+                    },
+                    "a": {
+                      "isScriptInput": true,
+                      "value": "{x: 0, y: 0, z: 0}",
+                      "type": "vec3",
+                      "uiInfo": "{\"widget\": \"color\"}"
+                    }
+                  },
+                  "type": "struct"
+                }
+              },
+              "type": "structInStruct"
+            },
+            "myFloatSlider": {
+              "isScriptInput": true,
+              "value": 0.5,
+              "type": "float",
+              "uiInfo": "{\"widget\":\"slider\", \"min\":0.0, \"max\":1.0, \"step\":0.01}",
+              "defaultValue": "0.5"
+            },
+            "floatUser0": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "float"
+            },
+            "myColor": {
+              "isScriptInput": true,
+              "value": "{x: 1, y: 0, z: 0}",
+              "type": "vec3",
+              "uiInfo": "{\"widget\":\"color\"}",
+              "defaultValue": "{1,0,0}"
+            },
+            "myColorAlpha": {
+              "isScriptInput": true,
+              "value": "{x: 1, y: 1, z: 1, w: 1}",
+              "type": "vec4",
+              "uiInfo": "{\"widget\":\"color\"}",
+              "defaultValue": "{1,1,1,1}"
+            },
+            "myColorExample": {
+              "isScriptInput": true,
+              "value": "{x: 1, y: 1, z: 1, w: 1}",
+              "type": "vec4",
+              "uiInfo": "{\"widget\":\"color\", \"showIf\":\"showIfBool\"}",
+              "defaultValue": "{1,1,1,1}"
+            },
+            "myBool": {
+              "isScriptInput": true,
+              "value": false,
+              "type": "bool"
+            },
+            "controlUser": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string",
+              "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"USER 0\", \"value\":\"user0\"}, {\"label\":\"USER1\", \"value\":\"user1\"}]}"
+            },
+            "intExample": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "int",
+              "uiInfo": "{\"showIf\":\"showIfBool\", \"showIfValue\":\"true\"}"
+            },
+            "animalType": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string",
+              "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"cat\", \"value\":\"cat\"}, {\"label\":\"dog\", \"value\":\"dog\"}, {\"label\":\"bird\", \"value\":\"bird\"}]}"
+            },
+            "floatUser1": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "float"
+            },
+            "myFloat": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "float"
+            },
+            "float0": {
+              "isScriptInput": true,
+              "value": 0,
+              "type": "float"
+            },
+            "strUser1": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string"
+            },
+            "myCombobox": {
+              "isScriptInput": true,
+              "value": "",
+              "type": "string",
+              "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"VALUE 0\", \"value\":\"value 0\"}, {\"label\":\"VALUE 1\", \"value\":\"value 1\"}]}"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Main/Widget_UI_References.js",
+            "inputNames.0": "animalType",
+            "inputNames.1": "controlUser",
+            "inputNames.2": "float0",
+            "inputNames.3": "floatUser0",
+            "inputNames.4": "floatUser1",
+            "inputNames.5": "intExample",
+            "inputNames.6": "myBool",
+            "inputNames.7": "myColor",
+            "inputNames.8": "myColorAlpha",
+            "inputNames.9": "myColorExample",
+            "inputNames.10": "myCombobox",
+            "inputNames.11": "myFloat",
+            "inputNames.12": "myFloatClamp",
+            "inputNames.13": "myFloatSlider",
+            "inputNames.14": "myInt",
+            "inputNames.15": "myIntClamp",
+            "inputNames.16": "myIntSlider",
+            "inputNames.17": "myObjArray",
+            "inputNames.18": "myString",
+            "inputNames.19": "myStruct",
+            "inputNames.20": "myStructArray",
+            "inputNames.21": "myStructInStruct",
+            "inputNames.22": "myVec2",
+            "inputNames.23": "myVec3",
+            "inputNames.24": "myVec4",
+            "inputNames.25": "number1",
+            "inputNames.26": "showIfBool",
+            "inputNames.27": "str0",
+            "inputNames.28": "strUser0",
+            "inputNames.29": "strUser1",
+            "inputNames.30": "string1",
+            "inputNames.31": "text",
+            "name": "Widget_UI_References",
+            "enabled": true,
+            "sceneObject": "@sceneObject:WidgetUIReferences",
+            "id": "bc2cc4af-e211-4932-864d-403349161fc7",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "afbc6aa3-19d8-4a97-bd5a-634021c447c9",
+      "name": "DirectorModule",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "0900196b-4ce9-467a-9edd-653120cf8d24",
+          "type": "ScriptComponent",
+          "name": "DirectorModule",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/DirectorModule.js",
+            "name": "DirectorModule",
+            "enabled": true,
+            "sceneObject": "@sceneObject:DirectorModule",
+            "id": "0900196b-4ce9-467a-9edd-653120cf8d24",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "140fca58-9e6f-4007-8400-f7476e6ac648",
+      "name": "ParallaxManager",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "a95c4842-015c-4837-bbe1-2ef2fec22053",
+          "type": "ScriptComponent",
+          "name": "ParallaxManager",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/ParallaxManager.js",
+            "name": "ParallaxManager",
+            "enabled": true,
+            "sceneObject": "@sceneObject:ParallaxManager",
+            "id": "a95c4842-015c-4837-bbe1-2ef2fec22053",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1d996fe-1a79-424f-a865-2e396cae9144",
+      "name": "Easings",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "9fff1394-3854-4b37-a05f-ea51f54c050b",
+          "type": "ScriptComponent",
+          "name": "Easings",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/Easings.js",
+            "name": "Easings",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Easings",
+            "id": "9fff1394-3854-4b37-a05f-ea51f54c050b",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "10a4b6d9-a0ac-461a-8778-8e2985d18fd5",
+      "name": "Animation",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "d3286855-db91-421b-8b37-2d494c0c5031",
+          "type": "ScriptComponent",
+          "name": "Animation",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/Animation.js",
+            "name": "Animation",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Animation",
+            "id": "d3286855-db91-421b-8b37-2d494c0c5031",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3f940e06-debb-48fd-8850-0de744b708f4",
+      "name": "VideoController",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "54775518-1436-4b94-8672-bf93c0cf3682",
+          "type": "ScriptComponent",
+          "name": "VideoController",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/VideoController.js",
+            "name": "VideoController",
+            "enabled": true,
+            "sceneObject": "@sceneObject:VideoController",
+            "id": "54775518-1436-4b94-8672-bf93c0cf3682",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "42563a28-1917-427c-8f2e-7c8090d7ee6a",
+      "name": "AudioManager",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "d8b1e9f0-7aa8-41d9-a110-f7f498f180aa",
+          "type": "ScriptComponent",
+          "name": "AudioManager",
+          "enabled": true,
+          "properties": {
+            "audioParent": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "b34df1a6-3010-4a98-b60a-cd35ebe0de12",
+                "name": "Audio"
+              },
+              "type": "SceneObject"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Main/AudioManager.js",
+            "inputNames.0": "audioParent",
+            "name": "AudioManager",
+            "enabled": true,
+            "sceneObject": "@sceneObject:AudioManager",
+            "id": "d8b1e9f0-7aa8-41d9-a110-f7f498f180aa",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "626bcd8f-9cd0-4023-8ff0-091a9722ece3",
+      "name": "AnimationTemplate",
+      "enabled": true,
+      "parentId": "81e4e612-ae5d-42a6-8d02-e911d19b3516",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "33798c28-b902-4290-a760-13b21852e5a7",
+          "type": "ScriptComponent",
+          "name": "AnimTemplate",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/LIB/Main/AnimTemplate.js",
+            "name": "AnimTemplate",
+            "enabled": true,
+            "sceneObject": "@sceneObject:AnimationTemplate",
+            "id": "33798c28-b902-4290-a760-13b21852e5a7",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "75a881a0-536f-4414-8aca-80bb0b30ca80",
+      "name": "Localization",
+      "enabled": true,
+      "parentId": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "9578ee67-74f7-4615-944b-9c00c5f56f95",
+      "name": "LocalizationModule",
+      "enabled": true,
+      "parentId": "75a881a0-536f-4414-8aca-80bb0b30ca80",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "98a3bf32-29d0-41fc-97bc-ab041afef858",
+          "type": "ScriptComponent",
+          "name": "LocalizationModule",
+          "enabled": true,
+          "properties": {
+            "texturesIds": {
+              "isScriptInput": true,
+              "value": [
+                "Example_1"
+              ],
+              "type": "string[]"
+            },
+            "textsIds": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "string[]"
+            },
+            "extrasIds": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "string[]"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Localization/LocalizationModule.js",
+            "inputNames.0": "extrasIds",
+            "inputNames.1": "textsIds",
+            "inputNames.2": "texturesIds",
+            "name": "LocalizationModule",
+            "enabled": true,
+            "sceneObject": "@sceneObject:LocalizationModule",
+            "id": "98a3bf32-29d0-41fc-97bc-ab041afef858",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "afafbca0-e2cf-44ff-bc21-9d3b8aec8372",
+      "name": "en",
+      "enabled": true,
+      "parentId": "9578ee67-74f7-4615-944b-9c00c5f56f95",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "ae4425f6-a764-4bac-b573-77f41e02a2b0",
+          "type": "ScriptComponent",
+          "name": "LocalizationDatas",
+          "enabled": true,
+          "properties": {
+            "textures": {
+              "isScriptInput": true,
+              "value": [
+                {
+                  "UUID": "6f6db6be-7cd0-493d-b744-ce4ec6aba30e",
+                  "name": "LOGO_DEFAULT_EN"
+                }
+              ],
+              "type": "Asset.Texture[]"
+            },
+            "texts": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "string[]"
+            },
+            "language": {
+              "isScriptInput": true,
+              "value": "en",
+              "type": "string"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Localization/LocalizationDatas.js",
+            "inputNames.0": "language",
+            "inputNames.1": "texts",
+            "inputNames.2": "textures",
+            "name": "LocalizationDatas",
+            "enabled": true,
+            "sceneObject": "@sceneObject:en",
+            "id": "ae4425f6-a764-4bac-b573-77f41e02a2b0",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8c06261f-fc32-405f-883e-526dad2abe22",
+      "name": "fr",
+      "enabled": true,
+      "parentId": "9578ee67-74f7-4615-944b-9c00c5f56f95",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "7841afd7-b0dc-485e-bcd1-2b70297cc65e",
+          "type": "ScriptComponent",
+          "name": "LocalizationDatas",
+          "enabled": true,
+          "properties": {
+            "textures": {
+              "isScriptInput": true,
+              "value": [
+                {
+                  "UUID": "28ee79ac-42b8-48b5-bffe-5579861430eb",
+                  "name": "LOGO_DEFAULT_FR"
+                }
+              ],
+              "type": "Asset.Texture[]"
+            },
+            "texts": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "string[]"
+            },
+            "language": {
+              "isScriptInput": true,
+              "value": "fr",
+              "type": "string"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Localization/LocalizationDatas.js",
+            "inputNames.0": "language",
+            "inputNames.1": "texts",
+            "inputNames.2": "textures",
+            "name": "LocalizationDatas",
+            "enabled": true,
+            "sceneObject": "@sceneObject:fr",
+            "id": "7841afd7-b0dc-485e-bcd1-2b70297cc65e",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0beefc07-8459-4d9a-b70e-46c8ce02bfbd",
+      "name": "LocalizationReferences",
+      "enabled": true,
+      "parentId": "9578ee67-74f7-4615-944b-9c00c5f56f95",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "bb23970a-cf03-4f68-bdb1-72304b42ff25",
+          "type": "ScriptComponent",
+          "name": "LocalizationReferences",
+          "enabled": true,
+          "properties": {
+            "listRenders": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "Component.RenderMeshVisual[]"
+            },
+            "listImages": {
+              "isScriptInput": true,
+              "value": [
+                {
+                  "UUID": "9b7dc483-fb39-4a6d-8056-44687a9c63ff",
+                  "name": "Image"
+                }
+              ],
+              "type": "Component.Image[]"
+            },
+            "scriptAsset": "@asset:Scripts/LIB/Localization/LocalizationReferences.js",
+            "inputNames.0": "listImages",
+            "inputNames.1": "listRenders",
+            "name": "LocalizationReferences",
+            "enabled": true,
+            "sceneObject": "@sceneObject:LocalizationReferences",
+            "id": "bb23970a-cf03-4f68-bdb1-72304b42ff25",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f2b18d58-9f2b-4667-a571-3ea0fe45a003",
+      "name": "Global",
+      "enabled": true,
+      "parentId": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "e9611291-1759-4188-8786-6727356c6386",
+      "name": "Hints",
+      "enabled": true,
+      "parentId": "f2b18d58-9f2b-4667-a571-3ea0fe45a003",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "dff7a03f-84e5-4ad6-9c4e-da8ba2ddb2be",
+          "type": "ScriptComponent",
+          "name": "Hints",
+          "enabled": true,
+          "properties": {
+            "scriptAsset": "@asset:Scripts/DirectorBasics/Hints.js",
+            "name": "Hints",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Hints",
+            "id": "dff7a03f-84e5-4ad6-9c4e-da8ba2ddb2be",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aff1b28c-52e3-4913-bf8c-b6010c4732ff",
+      "name": "SubScenes",
+      "enabled": true,
+      "parentId": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "fae6cfc1-f01c-4032-81aa-dc41b0a08dd5",
+      "name": "Subscene goes here",
+      "enabled": true,
+      "parentId": "aff1b28c-52e3-4913-bf8c-b6010c4732ff",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "f26800f0-be29-4258-a0ff-d74428023914",
+          "type": "ScriptComponent",
+          "name": "SubScene",
+          "enabled": true,
+          "properties": {
+            "parent": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3",
+                "name": "DummyParent"
+              },
+              "type": "SceneObject"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/SubScene.js",
+            "inputNames.0": "parent",
+            "name": "SubScene",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Subscene goes here",
+            "id": "f26800f0-be29-4258-a0ff-d74428023914",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da80ebc0-13a3-4d08-8d7d-0d9a13738f48",
+      "name": "CloudStorage",
+      "enabled": true,
+      "parentId": "aff1b28c-52e3-4913-bf8c-b6010c4732ff",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "138e45cf-273c-45e3-801a-a975ba462b09",
+          "type": "ScriptComponent",
+          "name": "CloudStorage",
+          "enabled": true,
+          "properties": {
+            "parent": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3",
+                "name": "DummyParent"
+              },
+              "type": "SceneObject"
+            },
+            "referenceAsset": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "345ed93c-5efe-4c81-935d-503faec390fa",
+                "name": "The_Garden_of_earthly_delights"
+              },
+              "type": "Asset.RemoteReferenceAsset"
+            },
+            "myRenderMeshVisual": {
+              "isScriptInput": true,
+              "value": null,
+              "type": "Component.RenderMeshVisual",
+              "uiInfo": "{\"label\" : \"Mesh Visual\", \"showIf\":\"action\", \"showIfValue\" : \"3\"}"
+            },
+            "myMaterialMeshVisual": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "72a81448-bcb5-4577-b57f-075cd7c45fc6",
+                "name": "Image"
+              },
+              "type": "Component.Image",
+              "uiInfo": "{\"label\" : \"Mesh Visual\", \"showIf\":\"action\", \"showIfValue\" : \"2\"}"
+            },
+            "myMaterial": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "a8b4245d-0f33-4c75-bef1-c17885c3881a",
+                "name": "TestMaterial"
+              },
+              "type": "Asset.Material",
+              "uiInfo": "{\"label\" : \"Material\", \"showIf\":\"action\", \"showIfValue\" : \"2\"}"
+            },
+            "prefabParent": {
+              "isScriptInput": true,
+              "value": null,
+              "type": "SceneObject",
+              "uiInfo": "{\"showIf\":\"action\", \"showIfValue\" : \"0\"}"
+            },
+            "myMLComponent": {
+              "isScriptInput": true,
+              "value": null,
+              "type": "Component.MLComponent",
+              "uiInfo": "{\"label\" : \"ML Component\", \"showIf\":\"action\", \"showIfValue\" : \"4\"}"
+            },
+            "myAudioComponent": {
+              "isScriptInput": true,
+              "value": null,
+              "type": "Component.AudioComponent",
+              "uiInfo": "{\"label\" : \"Audio\", \"showIf\":\"action\", \"showIfValue\" : \"1\"}"
+            },
+            "fallbackAsset": {
+              "isScriptInput": true,
+              "value": null,
+              "type": "Asset"
+            },
+            "texturePropertyName": {
+              "isScriptInput": true,
+              "value": "baseTex",
+              "type": "string",
+              "uiInfo": "{\"label\" : \"Property\", \"showIf\":\"action\", \"showIfValue\" : \"2\"}"
+            },
+            "idAsset": {
+              "isScriptInput": true,
+              "value": 1,
+              "type": "int",
+              "uiInfo": "{\"label\" : \"Asset Id to download\"}"
+            },
+            "action": {
+              "isScriptInput": true,
+              "value": 2,
+              "type": "int",
+              "uiInfo": "{\"widget\":\"combobox\", \"values\":[{\"label\":\"None\", \"value\":-1}, {\"label\":\"Instantiate Prefab\", \"value\":0}, {\"label\":\"Set Audio Track\", \"value\":1}, {\"label\":\"Set Texture\", \"value\":2}, {\"label\":\"Set Mesh\", \"value\":3}, {\"label\":\"Set ML Model\", \"value\":4}]}",
+              "defaultValue": "-1"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/SubScene/CloudStorage.js",
+            "inputNames.0": "action",
+            "inputNames.1": "fallbackAsset",
+            "inputNames.2": "idAsset",
+            "inputNames.3": "myAudioComponent",
+            "inputNames.4": "myMLComponent",
+            "inputNames.5": "myMaterial",
+            "inputNames.6": "myMaterialMeshVisual",
+            "inputNames.7": "myRenderMeshVisual",
+            "inputNames.8": "parent",
+            "inputNames.9": "prefabParent",
+            "inputNames.10": "referenceAsset",
+            "inputNames.11": "texturePropertyName",
+            "name": "CloudStorage",
+            "enabled": true,
+            "sceneObject": "@sceneObject:CloudStorage",
+            "id": "138e45cf-273c-45e3-801a-a975ba462b09",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4796ca99-2e13-4b4f-acd1-5eed51675817",
+      "name": "Director",
+      "enabled": true,
+      "parentId": "dacaa7fa-cae6-42b0-a773-e50bb579121f",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "6bf4421e-2bf5-4d5d-bec5-620717d7e4f9",
+          "type": "ScriptComponent",
+          "name": "Director",
+          "enabled": true,
+          "properties": {
+            "useFrontBack": {
+              "isScriptInput": true,
+              "value": true,
+              "type": "bool",
+              "defaultValue": "true;"
+            },
+            "subSceneParent": {
+              "isScriptInput": true,
+              "value": {
+                "UUID": "aff1b28c-52e3-4913-bf8c-b6010c4732ff",
+                "name": "SubScenes"
+              },
+              "type": "SceneObject"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/Director.js",
+            "inputNames.0": "subSceneParent",
+            "inputNames.1": "useFrontBack",
+            "name": "Director",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Director",
+            "id": "6bf4421e-2bf5-4d5d-bec5-620717d7e4f9",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6f646f69-8d36-4a6e-8f0e-73b8eb7c2b83",
+      "name": "Back",
+      "enabled": true,
+      "parentId": "4796ca99-2e13-4b4f-acd1-5eed51675817",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "69a7eaa2-c3e9-4bac-8182-8ef80a24491d",
+      "name": "Scenes for back here",
+      "enabled": true,
+      "parentId": "6f646f69-8d36-4a6e-8f0e-73b8eb7c2b83",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "449f0194-7fc2-402a-a9de-50d3a8815249",
+          "type": "ScriptComponent",
+          "name": "Scene",
+          "enabled": true,
+          "properties": {
+            "subScenes": {
+              "isScriptInput": true,
+              "value": [
+                {
+                  "UUID": "138e45cf-273c-45e3-801a-a975ba462b09",
+                  "name": "CloudStorage"
+                },
+                {
+                  "UUID": "f26800f0-be29-4258-a0ff-d74428023914",
+                  "name": "SubScene"
+                }
+              ],
+              "type": "Component.ScriptComponent[]"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/Scene.js",
+            "inputNames.0": "subScenes",
+            "name": "Scene",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Scenes for back here",
+            "id": "449f0194-7fc2-402a-a9de-50d3a8815249",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "511e4dde-b361-4f8c-83e6-04ebf720c706",
+      "name": "Front",
+      "enabled": true,
+      "parentId": "4796ca99-2e13-4b4f-acd1-5eed51675817",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "dd3e21b9-20c4-4a64-be9b-3fc155043a98",
+      "name": "Scenes for front here",
+      "enabled": true,
+      "parentId": "511e4dde-b361-4f8c-83e6-04ebf720c706",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "ea36a1bc-094f-4805-8ab4-6adc8f209c2a",
+          "type": "ScriptComponent",
+          "name": "Scene",
+          "enabled": true,
+          "properties": {
+            "subScenes": {
+              "isScriptInput": true,
+              "value": [],
+              "type": "Component.ScriptComponent[]"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/Scene.js",
+            "inputNames.0": "subScenes",
+            "name": "Scene",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Scenes for front here",
+            "id": "ea36a1bc-094f-4805-8ab4-6adc8f209c2a",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b6e4c9c-998e-4bff-991a-a50a307c030e",
+      "name": "Common",
+      "enabled": true,
+      "parentId": "4796ca99-2e13-4b4f-acd1-5eed51675817",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "6cb905af-ecd7-4687-90d4-72c5303c3ac0",
+      "name": "Scenes if no difference between front and back",
+      "enabled": true,
+      "parentId": "5b6e4c9c-998e-4bff-991a-a50a307c030e",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "01844936-6862-4323-95f0-c0abe72e667a",
+          "type": "ScriptComponent",
+          "name": "Scene",
+          "enabled": true,
+          "properties": {
+            "subScenes": {
+              "isScriptInput": true,
+              "value": [
+                {
+                  "UUID": "f26800f0-be29-4258-a0ff-d74428023914",
+                  "name": "SubScene"
+                }
+              ],
+              "type": "Component.ScriptComponent[]"
+            },
+            "scriptAsset": "@asset:Scripts/DirectorBasics/Scene.js",
+            "inputNames.0": "subScenes",
+            "name": "Scene",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Scenes if no difference between front and back",
+            "id": "01844936-6862-4323-95f0-c0abe72e667a",
+            "type": "ScriptComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a7208214-830f-4d95-a622-2ef13d42c2ef",
+      "name": "2D",
+      "enabled": true,
+      "parentId": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": []
+    },
+    {
+      "id": "93e630c8-a1e6-4b70-a643-326da1704a6b",
+      "name": "Camera Orthographic",
+      "enabled": true,
+      "parentId": "a7208214-830f-4d95-a622-2ef13d42c2ef",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "5809f184-3c0f-46fe-a594-2687db445460",
+          "type": "Camera",
+          "name": "Camera",
+          "enabled": true,
+          "properties": {
+            "mipmapLevel": 0,
+            "renderOrder": 1,
+            "size": 20,
+            "near": 1,
+            "far": 200,
+            "fov": 60.000004,
+            "clearColor.mode": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraClearColor.Mode",
+              "options": [
+                "None",
+                "Background",
+                "Color",
+                "Texture"
+              ]
+            },
+            "clearColor.color": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 0
+            },
+            "clearColor.input": null,
+            "clearColor.id": "77603715-e41e-4823-917d-6488a520bb83",
+            "clearColor.type": "CameraClearColor",
+            "clearDepth": {
+              "mode": {
+                "value": "Value",
+                "type": "enum",
+                "enumType": "Editor.Components.CameraClearDepth.Mode",
+                "options": [
+                  "None",
+                  "Value",
+                  "Texture"
+                ]
+              },
+              "value": 1,
+              "input": null,
+              "id": "eec222ee-c413-4a31-a8b4-2a4604e45290",
+              "type": "CameraClearDepth"
+            },
+            "aspect": 1,
+            "cameraType": {
+              "value": "Orthographic",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraType",
+              "options": [
+                "Perspective",
+                "Orthographic"
+              ]
+            },
+            "depthMode": {
+              "value": "Regular",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDepthBufferMode",
+              "options": [
+                "Regular",
+                "Logarithmic"
+              ]
+            },
+            "deviceProperty": {
+              "value": "All",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDeviceProperty",
+              "options": [
+                "None",
+                "Aspect",
+                "Fov",
+                "All"
+              ]
+            },
+            "aspectPreset": {
+              "value": "Custom",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraAspectPreset",
+              "options": [
+                "Specific",
+                "Custom"
+              ]
+            },
+            "oitLayers": {
+              "value": "NoOit",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraOitLayers",
+              "options": [
+                "NoOit",
+                "Layers4",
+                "Layers4Plus1",
+                "Layers8"
+              ]
+            },
+            "renderTarget": "@asset:Textures/RenderTargets/Render Target.renderTarget",
+            "maskTexture": null,
+            "inputTexture": null,
+            "orthographicSize": {
+              "x": 20,
+              "y": 20
+            },
+            "renderLayer": {
+              "value": 1048576,
+              "type": "layer_set_mask"
+            },
+            "name": "Camera",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Camera Orthographic",
+            "id": "5809f184-3c0f-46fe-a594-2687db445460",
+            "type": "Camera"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7425116a-2194-4e51-aa2f-13fc78afde94",
+      "name": "Full Frame Region",
+      "enabled": true,
+      "parentId": "93e630c8-a1e6-4b70-a643-326da1704a6b",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "4784c38f-5b44-4d54-8b2e-042e3d969c02",
+          "type": "ScreenRegionComponent",
+          "name": "Screen Region",
+          "enabled": true,
+          "properties": {
+            "region": {
+              "value": "FullFrame",
+              "type": "enum",
+              "enumType": "Editor.Components.ScreenRegionType",
+              "options": [
+                "FullFrame",
+                "Capture",
+                "Preview",
+                "SafeRender",
+                "RoundButton"
+              ]
+            },
+            "resizeWithKeyboard": false,
+            "name": "Screen Region",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Full Frame Region",
+            "id": "4784c38f-5b44-4d54-8b2e-042e3d969c02",
+            "type": "ScreenRegionComponent"
+          }
+        },
+        {
+          "id": "c70a1f19-f86a-4db5-acdd-5c3b85b0f706",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Full Frame Region",
+            "id": "c70a1f19-f86a-4db5-acdd-5c3b85b0f706",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3",
+      "name": "DummyParent",
+      "enabled": true,
+      "parentId": "7425116a-2194-4e51-aa2f-13fc78afde94",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "c0fc22ae-9602-4b62-a864-06355914009d",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:DummyParent#0",
+            "id": "c0fc22ae-9602-4b62-a864-06355914009d",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c8beadec-c118-401f-bf20-a133f628587d",
+      "name": "testImage",
+      "enabled": true,
+      "parentId": "9f17dfdc-3ed0-4f1e-9c81-2f52023ac3f3",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "70faa40f-978e-4618-9be7-d170ee3f4b75",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:testImage",
+            "id": "70faa40f-978e-4618-9be7-d170ee3f4b75",
+            "type": "ScreenTransform"
+          }
+        },
+        {
+          "id": "72a81448-bcb5-4577-b57f-075cd7c45fc6",
+          "type": "Image",
+          "name": "Image",
+          "enabled": true,
+          "properties": {
+            "flipX": false,
+            "flipY": false,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "rotationAngle": 0,
+            "materials.0": "@asset:Material/TestMaterial.mat",
+            "mainMaterial": "@asset:Material/TestMaterial.mat",
+            "stretchMode": {
+              "value": "Fit",
+              "type": "enum",
+              "enumType": "Editor.Components.StretchMode",
+              "options": [
+                "Fill",
+                "Fit",
+                "Stretch",
+                "FitHeight",
+                "FitWidth",
+                "FillAndCut"
+              ]
+            },
+            "verticalAlignment": {
+              "value": "Center",
+              "type": "enum",
+              "enumType": "Editor.Alignment.Vertical",
+              "options": [
+                "Bottom",
+                "Center",
+                "Top"
+              ]
+            },
+            "horizontalAlignment": {
+              "value": "Center",
+              "type": "enum",
+              "enumType": "Editor.Alignment.Horizontal",
+              "options": [
+                "Left",
+                "Center",
+                "Right"
+              ]
+            },
+            "meshShadowMode": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.MeshShadowMode",
+              "options": [
+                "None",
+                "Caster",
+                "Receiver"
+              ]
+            },
+            "shadowColor": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "w": 1
+            },
+            "shadowDensity": 1,
+            "renderOrder": 0,
+            "name": "Image",
+            "enabled": true,
+            "sceneObject": "@sceneObject:testImage",
+            "id": "72a81448-bcb5-4577-b57f-075cd7c45fc6",
+            "type": "Image"
+          }
+        }
+      ]
+    },
+    {
+      "id": "31628936-ea31-4c60-8616-d41aaba5ee20",
+      "name": "Logo",
+      "enabled": true,
+      "parentId": "7425116a-2194-4e51-aa2f-13fc78afde94",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "e1688b1a-7eb3-4b97-8356-1e79cf0293f7",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Logo#0",
+            "id": "e1688b1a-7eb3-4b97-8356-1e79cf0293f7",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f5cea4b4-7dac-44f8-8f1a-c0359aed30de",
+      "name": "Logo",
+      "enabled": true,
+      "parentId": "31628936-ea31-4c60-8616-d41aaba5ee20",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "b87d7b26-6a80-45d9-82e8-0c379cae4887",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": 0.800000011920929
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": 0.800000011920929,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Logo#1",
+            "id": "b87d7b26-6a80-45d9-82e8-0c379cae4887",
+            "type": "ScreenTransform"
+          }
+        },
+        {
+          "id": "9b7dc483-fb39-4a6d-8056-44687a9c63ff",
+          "type": "Image",
+          "name": "Image",
+          "enabled": true,
+          "properties": {
+            "flipX": false,
+            "flipY": false,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "rotationAngle": 0,
+            "materials.0": "@asset:Material/LOGO.mat",
+            "mainMaterial": "@asset:Material/LOGO.mat",
+            "stretchMode": {
+              "value": "Fit",
+              "type": "enum",
+              "enumType": "Editor.Components.StretchMode",
+              "options": [
+                "Fill",
+                "Fit",
+                "Stretch",
+                "FitHeight",
+                "FitWidth",
+                "FillAndCut"
+              ]
+            },
+            "verticalAlignment": {
+              "value": "Center",
+              "type": "enum",
+              "enumType": "Editor.Alignment.Vertical",
+              "options": [
+                "Bottom",
+                "Center",
+                "Top"
+              ]
+            },
+            "horizontalAlignment": {
+              "value": "Center",
+              "type": "enum",
+              "enumType": "Editor.Alignment.Horizontal",
+              "options": [
+                "Left",
+                "Center",
+                "Right"
+              ]
+            },
+            "meshShadowMode": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.MeshShadowMode",
+              "options": [
+                "None",
+                "Caster",
+                "Receiver"
+              ]
+            },
+            "shadowColor": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "w": 1
+            },
+            "shadowDensity": 1,
+            "renderOrder": 0,
+            "name": "Image",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Logo#1",
+            "id": "9b7dc483-fb39-4a6d-8056-44687a9c63ff",
+            "type": "Image"
+          }
+        }
+      ]
+    },
+    {
+      "id": "de3df20e-c407-4563-8285-166084f643f7",
+      "name": "Safe Frame Region",
+      "enabled": true,
+      "parentId": "93e630c8-a1e6-4b70-a643-326da1704a6b",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "1d41ab83-e684-47a5-91b1-d9ebbad3bca7",
+          "type": "ScreenRegionComponent",
+          "name": "Screen Region",
+          "enabled": true,
+          "properties": {
+            "region": {
+              "value": "SafeRender",
+              "type": "enum",
+              "enumType": "Editor.Components.ScreenRegionType",
+              "options": [
+                "FullFrame",
+                "Capture",
+                "Preview",
+                "SafeRender",
+                "RoundButton"
+              ]
+            },
+            "resizeWithKeyboard": false,
+            "name": "Screen Region",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Safe Frame Region",
+            "id": "1d41ab83-e684-47a5-91b1-d9ebbad3bca7",
+            "type": "ScreenRegionComponent"
+          }
+        },
+        {
+          "id": "84729349-ed7f-4cdb-af55-8e450ce8baf1",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Safe Frame Region",
+            "id": "84729349-ed7f-4cdb-af55-8e450ce8baf1",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f8239de5-82da-4735-a5ce-a70f151dea8d",
+      "name": "DummyParent",
+      "enabled": true,
+      "parentId": "de3df20e-c407-4563-8285-166084f643f7",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1048576,
+      "components": [
+        {
+          "id": "a744cb4d-f22b-4028-b807-626bbbf8624f",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:DummyParent#1",
+            "id": "a744cb4d-f22b-4028-b807-626bbbf8624f",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "95df837f-e5b0-4d8b-8ac0-584a1b9c0ce3",
+      "name": "Camera Orthographic LiveOnly",
+      "enabled": true,
+      "parentId": "a7208214-830f-4d95-a622-2ef13d42c2ef",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 2,
+      "components": [
+        {
+          "id": "ec4dbff1-7f10-4cc7-99cb-90759f16cb31",
+          "type": "Camera",
+          "name": "Camera",
+          "enabled": true,
+          "properties": {
+            "mipmapLevel": 0,
+            "renderOrder": 2,
+            "size": 20,
+            "near": 1,
+            "far": 200,
+            "fov": 60.000004,
+            "clearColor.mode": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraClearColor.Mode",
+              "options": [
+                "None",
+                "Background",
+                "Color",
+                "Texture"
+              ]
+            },
+            "clearColor.color": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 0
+            },
+            "clearColor.input": null,
+            "clearColor.id": "f7322b0f-59c3-4ca2-a590-759f7a84eeda",
+            "clearColor.type": "CameraClearColor",
+            "clearDepth": {
+              "mode": {
+                "value": "Value",
+                "type": "enum",
+                "enumType": "Editor.Components.CameraClearDepth.Mode",
+                "options": [
+                  "None",
+                  "Value",
+                  "Texture"
+                ]
+              },
+              "value": 1,
+              "input": null,
+              "id": "d733aea3-0c9d-443e-98ff-c368a8e05de2",
+              "type": "CameraClearDepth"
+            },
+            "aspect": 1,
+            "cameraType": {
+              "value": "Orthographic",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraType",
+              "options": [
+                "Perspective",
+                "Orthographic"
+              ]
+            },
+            "depthMode": {
+              "value": "Regular",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDepthBufferMode",
+              "options": [
+                "Regular",
+                "Logarithmic"
+              ]
+            },
+            "deviceProperty": {
+              "value": "All",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDeviceProperty",
+              "options": [
+                "None",
+                "Aspect",
+                "Fov",
+                "All"
+              ]
+            },
+            "aspectPreset": {
+              "value": "Custom",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraAspectPreset",
+              "options": [
+                "Specific",
+                "Custom"
+              ]
+            },
+            "oitLayers": {
+              "value": "NoOit",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraOitLayers",
+              "options": [
+                "NoOit",
+                "Layers4",
+                "Layers4Plus1",
+                "Layers8"
+              ]
+            },
+            "renderTarget": "@asset:Textures/RenderTargets/Render Target Live.renderTarget",
+            "maskTexture": null,
+            "inputTexture": null,
+            "orthographicSize": {
+              "x": 20,
+              "y": 20
+            },
+            "renderLayer": {
+              "value": 2,
+              "type": "layer_set_mask"
+            },
+            "name": "Camera",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Camera Orthographic LiveOnly",
+            "id": "ec4dbff1-7f10-4cc7-99cb-90759f16cb31",
+            "type": "Camera"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fe3f535c-3b43-48f3-873a-5efd2481041d",
+      "name": "Full Frame Region Live Only",
+      "enabled": true,
+      "parentId": "95df837f-e5b0-4d8b-8ac0-584a1b9c0ce3",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 2,
+      "components": [
+        {
+          "id": "d36d2549-21fd-4009-bc78-02ff6c1b292d",
+          "type": "ScreenRegionComponent",
+          "name": "Screen Region",
+          "enabled": true,
+          "properties": {
+            "region": {
+              "value": "FullFrame",
+              "type": "enum",
+              "enumType": "Editor.Components.ScreenRegionType",
+              "options": [
+                "FullFrame",
+                "Capture",
+                "Preview",
+                "SafeRender",
+                "RoundButton"
+              ]
+            },
+            "resizeWithKeyboard": false,
+            "name": "Screen Region",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Full Frame Region Live Only",
+            "id": "d36d2549-21fd-4009-bc78-02ff6c1b292d",
+            "type": "ScreenRegionComponent"
+          }
+        },
+        {
+          "id": "5e855db2-b094-40f2-92b6-cf3c61223162",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Full Frame Region Live Only",
+            "id": "5e855db2-b094-40f2-92b6-cf3c61223162",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d4646560-1eab-426a-993d-7abadff9e68b",
+      "name": "DummyParent",
+      "enabled": true,
+      "parentId": "fe3f535c-3b43-48f3-873a-5efd2481041d",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 2,
+      "components": [
+        {
+          "id": "53538bd7-7854-4704-a169-835463202e52",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:DummyParent#2",
+            "id": "53538bd7-7854-4704-a169-835463202e52",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aeba9ea5-0306-45de-9fdb-438d681a0dc4",
+      "name": "Safe Frame Region Live Only",
+      "enabled": true,
+      "parentId": "95df837f-e5b0-4d8b-8ac0-584a1b9c0ce3",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 2,
+      "components": [
+        {
+          "id": "be41da96-a5c0-450b-b52d-45b68b444c9f",
+          "type": "ScreenRegionComponent",
+          "name": "Screen Region",
+          "enabled": true,
+          "properties": {
+            "region": {
+              "value": "SafeRender",
+              "type": "enum",
+              "enumType": "Editor.Components.ScreenRegionType",
+              "options": [
+                "FullFrame",
+                "Capture",
+                "Preview",
+                "SafeRender",
+                "RoundButton"
+              ]
+            },
+            "resizeWithKeyboard": false,
+            "name": "Screen Region",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Safe Frame Region Live Only",
+            "id": "be41da96-a5c0-450b-b52d-45b68b444c9f",
+            "type": "ScreenRegionComponent"
+          }
+        },
+        {
+          "id": "b4bd63b6-21cc-4228-9856-a9a873c3dd79",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Safe Frame Region Live Only",
+            "id": "b4bd63b6-21cc-4228-9856-a9a873c3dd79",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f24b58c9-bd4b-4847-87d9-4089bbb011c4",
+      "name": "DummyParent",
+      "enabled": true,
+      "parentId": "aeba9ea5-0306-45de-9fdb-438d681a0dc4",
+      "transform": {
+        "position": [
+          0,
+          0,
+          -1
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 2,
+      "components": [
+        {
+          "id": "1a061741-8312-4406-819c-c97a4b828e1a",
+          "type": "ScreenTransform",
+          "name": "Screen Transform",
+          "enabled": true,
+          "properties": {
+            "constraints.fixedHeight": false,
+            "constraints.fixedWidth": false,
+            "constraints.pinToBottom": false,
+            "constraints.pinToLeft": false,
+            "constraints.pinToRight": false,
+            "constraints.pinToTop": false,
+            "anchor.leftBottom": {
+              "x": -1,
+              "y": -1
+            },
+            "anchor.rightTop": {
+              "x": 1,
+              "y": 1
+            },
+            "anchor.left": -1,
+            "anchor.right": 1,
+            "anchor.top": 1,
+            "anchor.bottom": -1,
+            "offset.leftBottom": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.rightTop": {
+              "x": 0,
+              "y": 0
+            },
+            "offset.left": 0,
+            "offset.right": 0,
+            "offset.top": 0,
+            "offset.bottom": 0,
+            "pivot": {
+              "x": 0,
+              "y": 0
+            },
+            "advanced": false,
+            "name": "Screen Transform",
+            "enabled": true,
+            "sceneObject": "@sceneObject:DummyParent#3",
+            "id": "1a061741-8312-4406-819c-c97a4b828e1a",
+            "type": "ScreenTransform"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e68e3e55-7cef-4ccf-8b4f-23700ab17a80",
+      "name": "3D",
+      "enabled": true,
+      "parentId": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "13bbafc0-3995-4cf0-a43a-f951ad4554a9",
+      "name": "Camera Persp",
+      "enabled": true,
+      "parentId": "e68e3e55-7cef-4ccf-8b4f-23700ab17a80",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "c68ea811-b87c-48f2-a8aa-842b5812cb08",
+          "type": "Camera",
+          "name": "Camera",
+          "enabled": true,
+          "properties": {
+            "mipmapLevel": 0,
+            "renderOrder": 0,
+            "size": 20,
+            "near": 1,
+            "far": 1000,
+            "fov": 60.000004,
+            "clearColor.mode": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraClearColor.Mode",
+              "options": [
+                "None",
+                "Background",
+                "Color",
+                "Texture"
+              ]
+            },
+            "clearColor.color": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 0
+            },
+            "clearColor.input": null,
+            "clearColor.id": "3f9c08fa-0aa4-48f9-a94d-2bda6426795a",
+            "clearColor.type": "CameraClearColor",
+            "clearDepth": {
+              "mode": {
+                "value": "Value",
+                "type": "enum",
+                "enumType": "Editor.Components.CameraClearDepth.Mode",
+                "options": [
+                  "None",
+                  "Value",
+                  "Texture"
+                ]
+              },
+              "value": 1,
+              "input": null,
+              "id": "be7ee712-643e-4985-847b-d8cb80e05a75",
+              "type": "CameraClearDepth"
+            },
+            "aspect": 1,
+            "cameraType": {
+              "value": "Perspective",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraType",
+              "options": [
+                "Perspective",
+                "Orthographic"
+              ]
+            },
+            "depthMode": {
+              "value": "Regular",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDepthBufferMode",
+              "options": [
+                "Regular",
+                "Logarithmic"
+              ]
+            },
+            "deviceProperty": {
+              "value": "All",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraDeviceProperty",
+              "options": [
+                "None",
+                "Aspect",
+                "Fov",
+                "All"
+              ]
+            },
+            "aspectPreset": {
+              "value": "Custom",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraAspectPreset",
+              "options": [
+                "Specific",
+                "Custom"
+              ]
+            },
+            "oitLayers": {
+              "value": "NoOit",
+              "type": "enum",
+              "enumType": "Editor.Components.CameraOitLayers",
+              "options": [
+                "NoOit",
+                "Layers4",
+                "Layers4Plus1",
+                "Layers8"
+              ]
+            },
+            "renderTarget": "@asset:Textures/RenderTargets/Render Target.renderTarget",
+            "maskTexture": null,
+            "inputTexture": null,
+            "renderLayer": {
+              "value": 1,
+              "type": "layer_set_mask"
+            },
+            "name": "Camera",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Camera Persp",
+            "id": "c68ea811-b87c-48f2-a8aa-842b5812cb08",
+            "type": "Camera"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b8b57e1a-5043-47f0-9fbf-1d4a89d24599",
+      "name": "Lighting",
+      "enabled": true,
+      "parentId": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "31efa198-9bad-4d04-bf1d-5c9e8f265338",
+      "name": "Envmap",
+      "enabled": true,
+      "parentId": "b8b57e1a-5043-47f0-9fbf-1d4a89d24599",
+      "transform": {
+        "position": [
+          0,
+          65,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "dea80872-30ca-4607-96f6-b0611ec5ab3d",
+          "type": "LightSource",
+          "name": "Light source",
+          "enabled": true,
+          "properties": {
+            "lightType": {
+              "value": "EnvMap",
+              "type": "enum",
+              "enumType": "Editor.Components.LightType",
+              "options": [
+                "Point",
+                "Directional",
+                "Spot",
+                "Ambient",
+                "EnvMap",
+                "Estimation"
+              ]
+            },
+            "intensity": 0,
+            "innerConeAngle": 0,
+            "outerConeAngle": 45,
+            "decayType": {
+              "value": "Linear",
+              "type": "enum",
+              "enumType": "Editor.Components.DecayType",
+              "options": [
+                "Linear",
+                "None",
+                "Quadratic"
+              ]
+            },
+            "decayLimit": false,
+            "decayRange": null,
+            "falloffType": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.FalloffType",
+              "options": [
+                "None",
+                "Quadratic"
+              ]
+            },
+            "falloffRange": null,
+            "shadowType": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.ShadowType",
+              "options": [
+                "None",
+                "Projective",
+                "ShadowMap"
+              ]
+            },
+            "castsShadows": false,
+            "shadowDensity": 1,
+            "shadowBlurRadius": 4,
+            "shadowTextureSize": 512,
+            "autoLightSourcePosition": true,
+            "autoShadowFrustumSize": true,
+            "autoShadowFrustumSizeExtend": 2,
+            "shadowFrustumSize": 100,
+            "shadowFrustumNearClipPlane": 1,
+            "shadowFrustumFarClipPlane": 1000,
+            "useEnvmapFromCamera": false,
+            "envmapFromCameraMode": {
+              "value": "Auto",
+              "type": "enum",
+              "enumType": "Editor.Components.EnvmapFromCameraMode",
+              "options": [
+                "Auto",
+                "Face",
+                "Surface"
+              ]
+            },
+            "estimationSharpness": 1,
+            "envmapExposure": 1,
+            "envmapRotation": 0,
+            "diffuseEnvmapTexture": "@asset:Textures/Echopark.hdr",
+            "specularEnvmapTexture": "@asset:Textures/Echopark.hdr",
+            "color": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "w": 1
+            },
+            "shadowColor": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 0
+            },
+            "dynamicEnvInputTexture": null,
+            "renderLayer": {
+              "value": 1048579,
+              "type": "layer_set_mask"
+            },
+            "name": "Light source",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Envmap",
+            "id": "dea80872-30ca-4607-96f6-b0611ec5ab3d",
+            "type": "LightSource"
+          }
+        }
+      ]
+    },
+    {
+      "id": "254ea28e-b853-4d9a-8d17-9c119f4e10c2",
+      "name": "Light",
+      "enabled": true,
+      "parentId": "b8b57e1a-5043-47f0-9fbf-1d4a89d24599",
+      "transform": {
+        "position": [
+          15,
+          55,
+          15
+        ],
+        "rotation": [
+          -72.97858428955078,
+          46.308475494384766,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "7c2aad66-a471-4a96-97c9-be9f3540c013",
+          "type": "LightSource",
+          "name": "Light source",
+          "enabled": true,
+          "properties": {
+            "lightType": {
+              "value": "Directional",
+              "type": "enum",
+              "enumType": "Editor.Components.LightType",
+              "options": [
+                "Point",
+                "Directional",
+                "Spot",
+                "Ambient",
+                "EnvMap",
+                "Estimation"
+              ]
+            },
+            "intensity": 1,
+            "innerConeAngle": 0,
+            "outerConeAngle": 45,
+            "decayType": {
+              "value": "Linear",
+              "type": "enum",
+              "enumType": "Editor.Components.DecayType",
+              "options": [
+                "Linear",
+                "None",
+                "Quadratic"
+              ]
+            },
+            "decayLimit": false,
+            "decayRange": null,
+            "falloffType": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.FalloffType",
+              "options": [
+                "None",
+                "Quadratic"
+              ]
+            },
+            "falloffRange": null,
+            "shadowType": {
+              "value": "None",
+              "type": "enum",
+              "enumType": "Editor.Components.ShadowType",
+              "options": [
+                "None",
+                "Projective",
+                "ShadowMap"
+              ]
+            },
+            "castsShadows": false,
+            "shadowDensity": 0.3,
+            "shadowBlurRadius": 4,
+            "shadowTextureSize": 512,
+            "autoLightSourcePosition": true,
+            "autoShadowFrustumSize": true,
+            "autoShadowFrustumSizeExtend": 2,
+            "shadowFrustumSize": 100,
+            "shadowFrustumNearClipPlane": 1,
+            "shadowFrustumFarClipPlane": 1000,
+            "useEnvmapFromCamera": false,
+            "envmapFromCameraMode": {
+              "value": "Auto",
+              "type": "enum",
+              "enumType": "Editor.Components.EnvmapFromCameraMode",
+              "options": [
+                "Auto",
+                "Face",
+                "Surface"
+              ]
+            },
+            "estimationSharpness": 1,
+            "envmapExposure": 1,
+            "envmapRotation": 0,
+            "diffuseEnvmapTexture": null,
+            "specularEnvmapTexture": null,
+            "color": {
+              "x": 1,
+              "y": 1,
+              "z": 1,
+              "w": 1
+            },
+            "shadowColor": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 0
+            },
+            "dynamicEnvInputTexture": null,
+            "renderLayer": {
+              "value": 1048579,
+              "type": "layer_set_mask"
+            },
+            "name": "Light source",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Light",
+            "id": "7c2aad66-a471-4a96-97c9-be9f3540c013",
+            "type": "LightSource"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b34df1a6-3010-4a98-b60a-cd35ebe0de12",
+      "name": "Audio",
+      "enabled": true,
+      "parentId": null,
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "e19e4d36-28ea-429e-9608-b27ed99b8240",
+      "name": "Loop",
+      "enabled": true,
+      "parentId": "b34df1a6-3010-4a98-b60a-cd35ebe0de12",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "f4af56be-dcd1-4663-83bb-ee9cc454dd1f",
+      "name": "Audio",
+      "enabled": true,
+      "parentId": "e19e4d36-28ea-429e-9608-b27ed99b8240",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "52994aff-f7e6-4084-ab19-6c822cb51e5c",
+          "type": "AudioComponent",
+          "name": "Audio",
+          "enabled": true,
+          "properties": {
+            "audioTrack": null,
+            "enableAutoplayLoop": true,
+            "volume": 1,
+            "enableMixToSnap": false,
+            "recordVolume": 1,
+            "enableSpatialAudio": false,
+            "enableDistanceEffect": false,
+            "curveType": {
+              "value": "Logarithm",
+              "type": "enum",
+              "enumType": "Editor.Components.DistanceEffectCurveType",
+              "options": [
+                "Linear",
+                "Inverse",
+                "Logarithm",
+                "InverseLogarithm"
+              ]
+            },
+            "minDistance": 0,
+            "maxDistance": 100,
+            "enableDirectivityEffect": false,
+            "enablePositionEffect": false,
+            "name": "Audio",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Audio#1",
+            "id": "52994aff-f7e6-4084-ab19-6c822cb51e5c",
+            "type": "AudioComponent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8df371e8-43ae-41de-9ccf-a9ffb48a9685",
+      "name": "SFX",
+      "enabled": true,
+      "parentId": "b34df1a6-3010-4a98-b60a-cd35ebe0de12",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": []
+    },
+    {
+      "id": "eb3760bd-9118-4196-88cd-7981df609029",
+      "name": "Sfx_1",
+      "enabled": true,
+      "parentId": "8df371e8-43ae-41de-9ccf-a9ffb48a9685",
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "layers": 1,
+      "components": [
+        {
+          "id": "8781a527-f3e5-4fa9-878a-830b649cb520",
+          "type": "AudioComponent",
+          "name": "Audio",
+          "enabled": true,
+          "properties": {
+            "audioTrack": null,
+            "enableAutoplayLoop": false,
+            "volume": 1,
+            "enableMixToSnap": false,
+            "recordVolume": 1,
+            "enableSpatialAudio": false,
+            "enableDistanceEffect": false,
+            "curveType": {
+              "value": "Logarithm",
+              "type": "enum",
+              "enumType": "Editor.Components.DistanceEffectCurveType",
+              "options": [
+                "Linear",
+                "Inverse",
+                "Logarithm",
+                "InverseLogarithm"
+              ]
+            },
+            "minDistance": 0,
+            "maxDistance": 100,
+            "enableDirectivityEffect": false,
+            "enablePositionEffect": false,
+            "name": "Audio",
+            "enabled": true,
+            "sceneObject": "@sceneObject:Sfx_1",
+            "id": "8781a527-f3e5-4fa9-878a-830b649cb520",
+            "type": "AudioComponent"
+          }
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "a8b4245d-0f33-4c75-bef1-c17885c3881a",
+      "name": "TestMaterial",
+      "type": "Material",
+      "path": "Material/TestMaterial.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "c3e855dd-919e-46ec-9e9d-81fda6c417fc",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.opacityMul.value": null,
+        "passInfos.0.opacityMul.hidden": true,
+        "passInfos.0.opacityMul.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityMul.label": "Opacity Multiplier",
+        "passInfos.0.opacityMul.min": 0,
+        "passInfos.0.opacityMul.max": 1,
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 1,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "PremultipliedAlphaAuto",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "2b0d35fd-cc4d-42cd-a86f-734be3dc5a94",
+        "passInfos.0.type": "PassInfo",
+        "name": "TestMaterial",
+        "fileMeta.id": "98d54fe9-65d1-4543-b864-5b6a98c2c928",
+        "id": "a8b4245d-0f33-4c75-bef1-c17885c3881a",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "28b709ba-a559-4147-a001-814bf0961858",
+      "name": "Remote_Asset_Cycler__PLACE_IN_SCENE",
+      "type": "ObjectPrefab",
+      "path": "Remote Asset Cycler.lspkg/Remote_Asset_Cycler__PLACE_IN_SCENE.prefab",
+      "properties": {
+        "prefabInstances.0": "@id:91739f9c-bf4d-40cf-b0cf-b08f731cde2a (Remote_Asset_Cycler__PLACE_IN_SCENE)",
+        "lazyLoading": false,
+        "retainAssets": true,
+        "sceneObjects.0": "@id:91739f9c-bf4d-40cf-b0cf-b08f731cde2a (Remote_Asset_Cycler__PLACE_IN_SCENE)",
+        "sceneObjects.1": "@id:5a979c3b-02cd-4e70-8a51-c8ff5a1a5654 (RemoteAssetCycler [EDIT])",
+        "sceneObjects.2": "@id:46807194-e8b4-40d3-b531-099dbe839329 (Behavior [EDIT TRIGGER])",
+        "rootSceneObjects.0": "@id:91739f9c-bf4d-40cf-b0cf-b08f731cde2a (Remote_Asset_Cycler__PLACE_IN_SCENE)",
+        "name": "Remote_Asset_Cycler__PLACE_IN_SCENE",
+        "fileMeta.id": "0ba58bcb-cfdd-8467-423a-60e6bd06098c",
+        "id": "28b709ba-a559-4147-a001-814bf0961858",
+        "type": "ObjectPrefab"
+      }
+    },
+    {
+      "id": "0aaf2931-2bbf-4a97-94f6-c220a8c3190f",
+      "name": "Cloud",
+      "type": "ObjectPrefab",
+      "path": "PREFAB/Cloud.prefab",
+      "properties": {
+        "prefabInstances.0": "@id:b65d547b-8842-48ef-ab52-f61c08833af0 (Cloud)",
+        "lazyLoading": false,
+        "retainAssets": true,
+        "sceneObjects.0": "@id:b65d547b-8842-48ef-ab52-f61c08833af0 (Cloud)",
+        "rootSceneObjects.0": "@id:b65d547b-8842-48ef-ab52-f61c08833af0 (Cloud)",
+        "name": "Cloud",
+        "fileMeta.id": "fcd79977-26b2-401b-8fc4-ac54c442526a",
+        "id": "0aaf2931-2bbf-4a97-94f6-c220a8c3190f",
+        "type": "ObjectPrefab"
+      }
+    },
+    {
+      "id": "9d42a7a0-855f-4e51-8985-9667f838422e",
+      "name": "cloud",
+      "type": "Material",
+      "path": "Toybox Models.lspkg/Materials/cloud.mat",
+      "properties": {
+        "passInfos.0.baseTex.value.id": "eb7e88ae-70ec-4b19-bac1-7d2d02e0b6cd",
+        "passInfos.0.baseTex.label": "Base Texture",
+        "passInfos.0.normalTex.value.id": "d13040e8-d6b8-405d-90c8-3c79fff70c27",
+        "passInfos.0.normalTex.label": "Normal Texture",
+        "passInfos.0.materialParamsTex.value.id": "1b16c750-86bc-4897-82f5-93bd72465d06",
+        "passInfos.0.materialParamsTex.label": "Material Params",
+        "passInfos.0.uvScale.value": 1,
+        "passInfos.0.uvScale.label": "UV Scale",
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Center_N016": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.Port_Emissive_N006": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "passInfos.0.Port_SpecularAO_N006": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": true,
+        "passInfos.0.depthTest": true,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "4a684b3b-012c-4b04-a2f5-85a7c0687d92",
+        "passInfos.0.type": "PassInfo",
+        "name": "cloud",
+        "fileMeta.id": "47e7fe25-96f5-c5f1-a80f-2e28d752edc4",
+        "id": "9d42a7a0-855f-4e51-8985-9667f838422e",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "0467705e-ac9d-40c9-9a7d-7df252803b09",
+      "name": "Invisible Material",
+      "type": "Material",
+      "path": "Preview Remote Asset.lspkg/Materials/Invisible Material.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 0.9999690055847168,
+          "z": 0.9999849796295166,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.Tweak_N121": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value": null,
+        "passInfos.0.baseTex.hidden": true,
+        "passInfos.0.baseTex.enabledBy": "Tweak_N121",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.Tweak_N308": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "Tweak_N308",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 1,
+        "passInfos.0.Port_Default_N369": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "55e0dbbd-0905-4ff2-918d-daada1ab73bb",
+        "passInfos.0.type": "PassInfo",
+        "name": "Invisible Material",
+        "fileMeta.id": "85aad32d-f9d1-77a4-f1d5-126d75ad7bd5",
+        "id": "0467705e-ac9d-40c9-9a7d-7df252803b09",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "a345e92c-b9bd-4490-b050-4e00a81f453a",
+      "name": "HINT SWAPCAM",
+      "type": "Material",
+      "path": "Material/HINT SWAPCAM.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "b3a14544-b889-4960-ad68-6a5b0726c157",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.opacityMul.value": null,
+        "passInfos.0.opacityMul.hidden": true,
+        "passInfos.0.opacityMul.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityMul.label": "Opacity Multiplier",
+        "passInfos.0.opacityMul.min": 0,
+        "passInfos.0.opacityMul.max": 1,
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 0,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "PremultipliedAlphaAuto",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "40982224-5e20-4386-b81e-63934d3357fe",
+        "passInfos.0.type": "PassInfo",
+        "name": "HINT SWAPCAM",
+        "fileMeta.id": "7a565df8-aa7d-10e3-e3da-f414e605dd60",
+        "id": "a345e92c-b9bd-4490-b050-4e00a81f453a",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "758ed9a4-0636-44be-8e73-3607b7af5479",
+      "name": "Preview Remote Asset__PLACE_IN_SCENE",
+      "type": "ObjectPrefab",
+      "path": "Preview Remote Asset.lspkg/Preview Remote Asset__PLACE_IN_SCENE.prefab",
+      "properties": {
+        "prefabInstances.0": "@id:4913a2eb-5eb4-4452-a93a-e2757849e85f (Preview Remote Asset__PLACE_IN_SCENE)",
+        "lazyLoading": false,
+        "retainAssets": true,
+        "sceneObjects.0": "@id:4913a2eb-5eb4-4452-a93a-e2757849e85f (Preview Remote Asset__PLACE_IN_SCENE)",
+        "sceneObjects.1": "@id:94e57d2b-66d7-43af-9dbe-c06a2bc49da2 (PreviewRemoteAsset [EDIT])",
+        "sceneObjects.2": "@id:f3073f91-a931-4299-ad33-197daee707a9 (Preview Scene Objects [DON'T EDIT])",
+        "sceneObjects.3": "@id:beab9072-14d7-4b4b-a7bb-65ea20644555 (Preview Texture)",
+        "sceneObjects.4": "@id:edf399f6-58ca-43d8-9c2c-956c9e2008d2 (Preview Prefab)",
+        "sceneObjects.5": "@id:57e6ca40-ec9f-4d25-a843-5e72cc223d89 (Preview Mesh)",
+        "sceneObjects.6": "@id:019f8029-80e9-4768-badf-0842d173831e (Preview Audio Track)",
+        "sceneObjects.7": "@id:298d7300-9835-43a0-ba03-bca9c950bd30 (Manipulate Visual)",
+        "sceneObjects.8": "@id:b75fd53d-9130-4209-8646-9717d77f0b4c (ML Component)",
+        "rootSceneObjects.0": "@id:4913a2eb-5eb4-4452-a93a-e2757849e85f (Preview Remote Asset__PLACE_IN_SCENE)",
+        "name": "Preview Remote Asset__PLACE_IN_SCENE",
+        "fileMeta.id": "d280a048-90d0-c708-c8e6-d55f95363a71",
+        "id": "758ed9a4-0636-44be-8e73-3607b7af5479",
+        "type": "ObjectPrefab"
+      }
+    },
+    {
+      "id": "6070a71b-96bd-4a6c-9bff-111e83fa224d",
+      "name": "SpriteGraphPreset",
+      "type": "Material",
+      "path": "Preview Remote Asset.lspkg/Materials/SpriteGraphPreset.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "c3e855dd-919e-46ec-9e9d-81fda6c417fc",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.opacityMul.value": null,
+        "passInfos.0.opacityMul.hidden": true,
+        "passInfos.0.opacityMul.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityMul.label": "Opacity Multiplier",
+        "passInfos.0.opacityMul.min": 0,
+        "passInfos.0.opacityMul.max": 1,
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 1,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "PremultipliedAlphaAuto",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "d8e62885-2220-430e-be58-d4601b8f4c9d",
+        "passInfos.0.type": "PassInfo",
+        "name": "SpriteGraphPreset",
+        "fileMeta.id": "2d4592a3-ddd0-cd60-1c01-ed81d2acad66",
+        "id": "6070a71b-96bd-4a6c-9bff-111e83fa224d",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "491de7a7-5af2-46af-9c04-00c71d52d97f",
+      "name": "LOGO",
+      "type": "Material",
+      "path": "Material/LOGO.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "2d9c269e-a08c-4fee-8477-7f12c7343768",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.opacityMul.value": null,
+        "passInfos.0.opacityMul.hidden": true,
+        "passInfos.0.opacityMul.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityMul.label": "Opacity Multiplier",
+        "passInfos.0.opacityMul.min": 0,
+        "passInfos.0.opacityMul.max": 1,
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 0,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "PremultipliedAlphaAuto",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "072dd5b4-6171-4479-aae7-fcf4ee516297",
+        "passInfos.0.type": "PassInfo",
+        "name": "LOGO",
+        "fileMeta.id": "616e9847-ccf0-46f8-89c4-dc186c51c8f0",
+        "id": "491de7a7-5af2-46af-9c04-00c71d52d97f",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "26bffde9-a933-42f5-9f94-ce41e54f8e40",
+      "name": "Render Target Live",
+      "type": "RenderTarget",
+      "path": "Textures/RenderTargets/Render Target Live.renderTarget",
+      "properties": {
+        "useScreenResolution": true,
+        "allocateMips": false,
+        "antialiasingMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.AntialiasingMode",
+          "options": [
+            "Disabled",
+            "MSAA",
+            "TAA"
+          ]
+        },
+        "msaaStrategy": {
+          "value": "OnlyWhenRequired",
+          "type": "enum",
+          "enumType": "Editor.Assets.MSAAStrategy",
+          "options": [
+            "Default",
+            "OnlyWhenRequired"
+          ]
+        },
+        "depthBuffer": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthBufferStrategy",
+          "options": [
+            "Auto",
+            "ForceOff",
+            "ForceOn"
+          ]
+        },
+        "clearColorOption": {
+          "value": "CustomTexture",
+          "type": "enum",
+          "enumType": "Editor.Assets.ClearColorOption",
+          "options": [
+            "None",
+            "BackgroundTexture",
+            "CustomColor",
+            "CustomTexture",
+            "LegacyClearColorEnable"
+          ]
+        },
+        "inputTexture": "@asset:Textures/RenderTargets/Render Target.renderTarget",
+        "clearColor": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 0
+        },
+        "name": "Render Target Live",
+        "fileMeta.id": "c10fadac-97af-41c1-bf6f-5b73880de0bb",
+        "id": "26bffde9-a933-42f5-9f94-ce41e54f8e40",
+        "type": "RenderTarget"
+      }
+    },
+    {
+      "id": "ee946f35-3df1-420a-952a-b5db6e9ad02a",
+      "name": "Uber PBR",
+      "type": "Material",
+      "path": "Preview Remote Asset.lspkg/Materials/Uber PBR.mat",
+      "properties": {
+        "passInfos.0.Vertex Color": {
+          "value": "None",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "None",
+            "Base Color",
+            "Emissive",
+            "AO"
+          ],
+          "label": "Vertex Color"
+        },
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 0.9999690055847168,
+          "z": 0.9999849796295166,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "f6d83f47-1d95-404a-b109-17d9503fc78d",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.ENABLE_RECOLOR": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Recolor"
+        },
+        "passInfos.0.recolorRed.value": null,
+        "passInfos.0.recolorRed.hidden": true,
+        "passInfos.0.recolorRed.enabledBy": "ENABLE_RECOLOR",
+        "passInfos.0.recolorRed.label": "Recolor Red",
+        "passInfos.0.recolorGreen.value": null,
+        "passInfos.0.recolorGreen.hidden": true,
+        "passInfos.0.recolorGreen.enabledBy": "ENABLE_RECOLOR",
+        "passInfos.0.recolorGreen.label": "Recolor Green",
+        "passInfos.0.recolorBlue.value": null,
+        "passInfos.0.recolorBlue.hidden": true,
+        "passInfos.0.recolorBlue.enabledBy": "ENABLE_RECOLOR",
+        "passInfos.0.recolorBlue.label": "Recolor Blue",
+        "passInfos.0.ENABLE_NORMALMAP": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Normal Map"
+        },
+        "passInfos.0.normalTex.value.id": "24624e37-d55e-47c5-a92a-4c87b4ebb46c",
+        "passInfos.0.normalTex.label": "Texture",
+        "passInfos.0.ENABLE_DETAIL_NORMAL": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Detail Normal"
+        },
+        "passInfos.0.detailNormalTex.value": null,
+        "passInfos.0.detailNormalTex.hidden": true,
+        "passInfos.0.detailNormalTex.enabledBy": "ENABLE_DETAIL_NORMAL",
+        "passInfos.0.detailNormalTex.label": "Texture",
+        "passInfos.0.ENABLE_EMISSIVE": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Emissive"
+        },
+        "passInfos.0.emissiveTex.value": null,
+        "passInfos.0.emissiveTex.hidden": true,
+        "passInfos.0.emissiveTex.enabledBy": "ENABLE_EMISSIVE",
+        "passInfos.0.emissiveTex.label": "Texture",
+        "passInfos.0.emissiveColor.value": null,
+        "passInfos.0.emissiveColor.hidden": true,
+        "passInfos.0.emissiveColor.enabledBy": "ENABLE_EMISSIVE",
+        "passInfos.0.emissiveColor.label": "Color",
+        "passInfos.0.emissiveIntensity.value": null,
+        "passInfos.0.emissiveIntensity.hidden": true,
+        "passInfos.0.emissiveIntensity.enabledBy": "ENABLE_EMISSIVE",
+        "passInfos.0.emissiveIntensity.label": "Intensity",
+        "passInfos.0.emissiveIntensity.min": 0,
+        "passInfos.0.emissiveIntensity.max": 10,
+        "passInfos.0.ENABLE_SIMPLE_REFLECTION": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Simple Reflection"
+        },
+        "passInfos.0.reflectionTex.value": null,
+        "passInfos.0.reflectionTex.hidden": true,
+        "passInfos.0.reflectionTex.enabledBy": "ENABLE_SIMPLE_REFLECTION",
+        "passInfos.0.reflectionTex.label": "Texture",
+        "passInfos.0.reflectionIntensity.value": null,
+        "passInfos.0.reflectionIntensity.hidden": true,
+        "passInfos.0.reflectionIntensity.enabledBy": "ENABLE_SIMPLE_REFLECTION",
+        "passInfos.0.reflectionIntensity.label": "Intensity",
+        "passInfos.0.reflectionIntensity.min": 0,
+        "passInfos.0.reflectionIntensity.max": 10,
+        "passInfos.0.Tweak_N177": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Modulation Map"
+        },
+        "passInfos.0.reflectionModulationTex.value": null,
+        "passInfos.0.reflectionModulationTex.hidden": true,
+        "passInfos.0.reflectionModulationTex.enabledBy": "Tweak_N177",
+        "passInfos.0.reflectionModulationTex.label": "Texture",
+        "passInfos.0.ENABLE_RIM_HIGHLIGHT": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Rim Highlight"
+        },
+        "passInfos.0.rimColor.value": null,
+        "passInfos.0.rimColor.hidden": true,
+        "passInfos.0.rimColor.enabledBy": "ENABLE_RIM_HIGHLIGHT",
+        "passInfos.0.rimColor.label": "Color",
+        "passInfos.0.rimIntensity.value": null,
+        "passInfos.0.rimIntensity.hidden": true,
+        "passInfos.0.rimIntensity.enabledBy": "ENABLE_RIM_HIGHLIGHT",
+        "passInfos.0.rimIntensity.label": "Intensity",
+        "passInfos.0.rimIntensity.min": 0,
+        "passInfos.0.rimIntensity.max": 10,
+        "passInfos.0.rimExponent.value": null,
+        "passInfos.0.rimExponent.hidden": true,
+        "passInfos.0.rimExponent.enabledBy": "ENABLE_RIM_HIGHLIGHT",
+        "passInfos.0.rimExponent.label": "Exponent",
+        "passInfos.0.rimExponent.min": 0,
+        "passInfos.0.rimExponent.max": 10,
+        "passInfos.0.ENABLE_RIM_INVERT": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Invert"
+        },
+        "passInfos.0.Tweak_N216": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Rim Color Texture"
+        },
+        "passInfos.0.rimColorTex.value": null,
+        "passInfos.0.rimColorTex.hidden": true,
+        "passInfos.0.rimColorTex.enabledBy": "Tweak_N216",
+        "passInfos.0.rimColorTex.label": "Texture",
+        "passInfos.0.metallic.value": 1,
+        "passInfos.0.metallic.label": "Metallic",
+        "passInfos.0.metallic.min": 0,
+        "passInfos.0.metallic.max": 1,
+        "passInfos.0.roughness.value": 1,
+        "passInfos.0.roughness.label": "Roughness",
+        "passInfos.0.roughness.min": 0,
+        "passInfos.0.roughness.max": 1,
+        "passInfos.0.materialParamsTex.value.id": "11cdadc2-23fa-4dd3-ac75-ecfaf3c5e067",
+        "passInfos.0.materialParamsTex.label": "Texture",
+        "passInfos.0.ENABLE_SPECULAR_AO": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Specular AO"
+        },
+        "passInfos.0.specularAoIntensity.value": null,
+        "passInfos.0.specularAoIntensity.hidden": true,
+        "passInfos.0.specularAoIntensity.enabledBy": "ENABLE_SPECULAR_AO",
+        "passInfos.0.specularAoIntensity.label": "Intensity",
+        "passInfos.0.specularAoIntensity.min": 0,
+        "passInfos.0.specularAoIntensity.max": 1,
+        "passInfos.0.specularAoDarkening.value": null,
+        "passInfos.0.specularAoDarkening.hidden": true,
+        "passInfos.0.specularAoDarkening.enabledBy": "ENABLE_SPECULAR_AO",
+        "passInfos.0.specularAoDarkening.label": "Darkening",
+        "passInfos.0.specularAoDarkening.min": 0,
+        "passInfos.0.specularAoDarkening.max": 1,
+        "passInfos.0.ENABLE_UV2": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": {
+          "x": 1,
+          "y": 1
+        },
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": {
+          "x": 1,
+          "y": 1
+        },
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.ENABLE_UV3": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": {
+          "x": 1,
+          "y": 1
+        },
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": {
+          "x": 1,
+          "y": 1
+        },
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": true,
+        "passInfos.0.depthTest": true,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "e393da57-8e4f-48c3-9c1a-e7cbc0cf44f2",
+        "passInfos.0.type": "PassInfo",
+        "name": "Uber PBR",
+        "fileMeta.id": "34856ecf-4297-4260-5477-4ae09e463246",
+        "id": "ee946f35-3df1-420a-952a-b5db6e9ad02a",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "2f5a1b76-f83a-40eb-93aa-8eb8415a6b0c",
+      "name": "HINT TAP",
+      "type": "Material",
+      "path": "Material/HINT TAP.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 1,
+          "z": 1,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.ENABLE_BASE_TEX": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "078e2015-b9e0-4420-b4f2-f75a54f86793",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.ENABLE_OPACITY_TEX": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.opacityMul.value": null,
+        "passInfos.0.opacityMul.hidden": true,
+        "passInfos.0.opacityMul.enabledBy": "ENABLE_OPACITY_TEX",
+        "passInfos.0.opacityMul.label": "Opacity Multiplier",
+        "passInfos.0.opacityMul.min": 0,
+        "passInfos.0.opacityMul.max": 1,
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 0,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": false,
+        "passInfos.0.depthTest": false,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "PremultipliedAlphaAuto",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "b40d02f0-cd79-4f52-aeb2-65aded8708db",
+        "passInfos.0.type": "PassInfo",
+        "name": "HINT TAP",
+        "fileMeta.id": "76397119-c305-7499-c3e9-652b34271531",
+        "id": "2f5a1b76-f83a-40eb-93aa-8eb8415a6b0c",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "a8229371-3839-413f-93cb-d239f09f0e94",
+      "name": "temp____Default1",
+      "type": "Material",
+      "path": "Gift Box  Animated .lspkg/Materials/temp____Default1.mat",
+      "properties": {
+        "passInfos.0.baseColor.value": {
+          "x": 1,
+          "y": 0.9999690055847168,
+          "z": 0.9999849796295166,
+          "w": 1
+        },
+        "passInfos.0.baseColor.label": "Base Color",
+        "passInfos.0.Tweak_N121": {
+          "value": true,
+          "isDefine": true,
+          "type": "define",
+          "label": "Base Texture"
+        },
+        "passInfos.0.baseTex.value.id": "087ec644-cfff-493c-803b-4af4a4c69b33",
+        "passInfos.0.baseTex.label": "Texture",
+        "passInfos.0.Texture UV": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Transformed UV 2",
+            "Transformed UV 3"
+          ],
+          "label": "Texture UV"
+        },
+        "passInfos.0.Tweak_N308": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Opacity Texture"
+        },
+        "passInfos.0.opacityTex.value": null,
+        "passInfos.0.opacityTex.hidden": true,
+        "passInfos.0.opacityTex.enabledBy": "Tweak_N308",
+        "passInfos.0.opacityTex.label": "Texture",
+        "passInfos.0.Tweak_N67": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 2"
+        },
+        "passInfos.0.Source": {
+          "value": "Mesh UV 0",
+          "isDefine": true,
+          "type": "defineSelect",
+          "options": [
+            "Mesh UV 0",
+            "Mesh UV 1",
+            "Screen UV",
+            "Transformed UV 2"
+          ],
+          "label": "Source"
+        },
+        "passInfos.0.uv2Scale.value": null,
+        "passInfos.0.uv2Scale.hidden": true,
+        "passInfos.0.uv2Scale.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Scale.label": "Scale",
+        "passInfos.0.uv2Offset.value": null,
+        "passInfos.0.uv2Offset.hidden": true,
+        "passInfos.0.uv2Offset.enabledBy": "Tweak_N67",
+        "passInfos.0.uv2Offset.label": "Offset",
+        "passInfos.0.uv2EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.Tweak_N11": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Transformed UV 3"
+        },
+        "passInfos.0.uv3Scale.value": null,
+        "passInfos.0.uv3Scale.hidden": true,
+        "passInfos.0.uv3Scale.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Scale.label": "Scale",
+        "passInfos.0.uv3Offset.value": null,
+        "passInfos.0.uv3Offset.hidden": true,
+        "passInfos.0.uv3Offset.enabledBy": "Tweak_N11",
+        "passInfos.0.uv3Offset.label": "Offset",
+        "passInfos.0.uv3EnableAnimation": {
+          "value": false,
+          "isDefine": true,
+          "type": "define",
+          "label": "Animation"
+        },
+        "passInfos.0.alphaTestThreshold.value": null,
+        "passInfos.0.alphaTestThreshold.hidden": true,
+        "passInfos.0.alphaTestThreshold.enabledBy": "uv3EnableAnimation",
+        "passInfos.0.alphaTestThreshold.label": "Alpha Test Threshold",
+        "passInfos.0.alphaTestThreshold.min": 0,
+        "passInfos.0.alphaTestThreshold.max": 1,
+        "passInfos.0.Port_Default_N204": 1,
+        "passInfos.0.PreviewEnabled": 0,
+        "passInfos.0.depthWrite": true,
+        "passInfos.0.depthTest": true,
+        "passInfos.0.depthFunction": {
+          "value": "LessEqual",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthFunction",
+          "options": [
+            "Never",
+            "Less",
+            "Equal",
+            "LessEqual",
+            "Greater",
+            "NotEqual",
+            "GreaterEqual",
+            "Always"
+          ]
+        },
+        "passInfos.0.twoSided": false,
+        "passInfos.0.cullMode": {
+          "value": "Back",
+          "type": "enum",
+          "enumType": "Editor.Assets.CullMode",
+          "options": [
+            "Front",
+            "Back",
+            "FrontAndBack"
+          ]
+        },
+        "passInfos.0.blendMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.BlendMode",
+          "options": [
+            "Disabled",
+            "Normal",
+            "Multiply",
+            "MultiplyLegacy",
+            "Add",
+            "AddLegacy",
+            "PremultipliedAlpha",
+            "Glass",
+            "ColoredGlass",
+            "AlphaTest",
+            "AlphaToCoverage",
+            "Screen",
+            "Min",
+            "Max",
+            "PremultipliedAlphaAuto",
+            "Custom",
+            "Darken",
+            "ColorBurn",
+            "Lighten",
+            "ColorDodge",
+            "Overlay",
+            "SoftLight",
+            "HardLight",
+            "VividLight",
+            "LinearLight",
+            "PinLight",
+            "HardMix",
+            "Diff",
+            "Exclusion",
+            "Subtract",
+            "Hue",
+            "Saturation",
+            "Color",
+            "Luminosity",
+            "Average",
+            "Negation",
+            "HardReflect",
+            "HardGlow",
+            "HardPhoenix",
+            "Realistic",
+            "Division",
+            "Bright",
+            "Forgray",
+            "NotBright",
+            "Intense"
+          ]
+        },
+        "passInfos.0.polygonOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "passInfos.0.frustumCulling": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.FrustumCullMode",
+          "options": [
+            "Auto",
+            "Extend"
+          ]
+        },
+        "passInfos.0.instanceCount": 1,
+        "passInfos.0.id": "0da71516-12d8-4fa0-a754-b5e84ef3fdc6",
+        "passInfos.0.type": "PassInfo",
+        "name": "temp____Default1",
+        "fileMeta.id": "963918f5-0c9e-eff1-5034-e61572b41b87",
+        "id": "a8229371-3839-413f-93cb-d239f09f0e94",
+        "type": "Material"
+      }
+    },
+    {
+      "id": "2d36dcc6-2403-42b7-9ce6-570c0f0006a6",
+      "name": "Render Target",
+      "type": "RenderTarget",
+      "path": "Textures/RenderTargets/Render Target.renderTarget",
+      "properties": {
+        "useScreenResolution": true,
+        "allocateMips": false,
+        "antialiasingMode": {
+          "value": "Disabled",
+          "type": "enum",
+          "enumType": "Editor.Assets.AntialiasingMode",
+          "options": [
+            "Disabled",
+            "MSAA",
+            "TAA"
+          ]
+        },
+        "msaaStrategy": {
+          "value": "OnlyWhenRequired",
+          "type": "enum",
+          "enumType": "Editor.Assets.MSAAStrategy",
+          "options": [
+            "Default",
+            "OnlyWhenRequired"
+          ]
+        },
+        "depthBuffer": {
+          "value": "Auto",
+          "type": "enum",
+          "enumType": "Editor.Assets.DepthBufferStrategy",
+          "options": [
+            "Auto",
+            "ForceOff",
+            "ForceOn"
+          ]
+        },
+        "clearColorOption": {
+          "value": "BackgroundTexture",
+          "type": "enum",
+          "enumType": "Editor.Assets.ClearColorOption",
+          "options": [
+            "None",
+            "BackgroundTexture",
+            "CustomColor",
+            "CustomTexture",
+            "LegacyClearColorEnable"
+          ]
+        },
+        "inputTexture": null,
+        "clearColor": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 0
+        },
+        "name": "Render Target",
+        "fileMeta.id": "4c56e4f9-87a6-4352-8231-973ba3d1e27d",
+        "id": "2d36dcc6-2403-42b7-9ce6-570c0f0006a6",
+        "type": "RenderTarget"
+      }
+    },
+    {
+      "id": "a6b01cb5-6c35-48e6-a5b5-d391442be58d",
+      "name": "Giftbox__PLACE_IN_SCENE",
+      "type": "ObjectPrefab",
+      "path": "Gift Box  Animated .lspkg/Giftbox__PLACE_IN_SCENE.prefab",
+      "properties": {
+        "prefabInstances.0": "@id:d628aee8-9487-470f-8876-22651d1d27ca (Giftbox__PLACE_IN_SCENE)",
+        "lazyLoading": false,
+        "retainAssets": true,
+        "sceneObjects.0": "@id:d628aee8-9487-470f-8876-22651d1d27ca (Giftbox__PLACE_IN_SCENE)",
+        "sceneObjects.1": "@id:7f682948-947f-4eef-ab77-c5f923dbff3c (temp:box_bt)",
+        "sceneObjects.2": "@id:930fb0e8-7034-4612-8c72-7bcbc0482cfe (temp:box_top | Pivot)",
+        "sceneObjects.3": "@id:eea6c22b-e4ef-406f-9179-8f797e4ee96b (temp:box_top)",
+        "sceneObjects.4": "@id:71900ce8-3073-4483-a624-6758ec453dd5 (temp:envelope | Pivot)",
+        "sceneObjects.5": "@id:ad884624-c6f8-492c-9e12-d75874cae855 (temp:envelope)",
+        "sceneObjects.6": "@id:78bf0b00-2ade-44aa-a08c-a286f439d2c7 (Particles)",
+        "rootSceneObjects.0": "@id:d628aee8-9487-470f-8876-22651d1d27ca (Giftbox__PLACE_IN_SCENE)",
+        "name": "Giftbox__PLACE_IN_SCENE",
+        "fileMeta.id": "ad17893f-d0d6-18f1-4d09-e1638ca669e3",
+        "id": "a6b01cb5-6c35-48e6-a5b5-d391442be58d",
+        "type": "ObjectPrefab"
+      }
+    }
+  ]
+}
