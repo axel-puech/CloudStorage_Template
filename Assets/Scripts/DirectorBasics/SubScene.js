@@ -8,16 +8,13 @@ script.subScene.SetUpdate(Update);
 //__________________________Variables_____________________________//
 //________Caller________//
 
-const LoadingCloudAssetCaller = script.subScene.CreateCaller("loadingAssetEvent", null);
 
 //________Listener________//
 //________DelayEvent________//
 
 //_________________________Director_Functions_____________________//
 function Start() {}
-function OnLateStart() {
-  LoadingCloudAssetCaller.Call(1);
-}
+function OnLateStart() {}
 function Update() {}
 function Stop() {}
 //___________________________Functions__________________________//
